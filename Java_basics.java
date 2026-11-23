@@ -96,10 +96,12 @@ public class Java_Basics {
         System.out.println("\n            Keyword Check");
 
         System.out.print("Enter the sentence: ");
-        String sentenceCheck = input.nextLine();
+        String sentenceCheck = input.next();
+        sentenceCheck += input.nextLine();
+
 
         System.out.print("Enter a keyword: ");
-        String keyword = input.nextLine();
+        String keyword = input.next();
 
         boolean keywordPresent = sentenceCheck.contains(keyword);
 
@@ -113,13 +115,17 @@ public class Java_Basics {
         System.out.println("\n            Word Replacement");
 
         System.out.print("Enter the initial sentence: ");
-        String initialSentence = input.nextLine();
+        String initialSentence = input.next();
+        initialSentence += input.nextLine();
+
 
         System.out.print("Word to replace: ");
-        String wordToReplace = input.nextLine();
+        String wordToReplace = input.next();
 
         System.out.print("Replacement Word: ");
-        String replacementWord = input.nextLine();
+        String replacementWord = input.next();
+        replacementWord += input.nextLine();
+
 
         String modifiedSentence = initialSentence.replace(wordToReplace, replacementWord);
 
