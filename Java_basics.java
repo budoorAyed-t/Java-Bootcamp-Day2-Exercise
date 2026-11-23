@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Java_Basics {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         StringBuilder stringBuilder;
@@ -63,7 +61,9 @@ public class Main {
         System.out.println("\n            String Reverse");
 
         System.out.print("Enter the sentence to print in reverse: ");
-        String sentenceReverse = input.nextLine();
+        String sentenceReverse = input.next();
+        sentenceReverse += input.nextLine();
+
 
         stringBuilder = new StringBuilder(sentenceReverse); // now initiate the string builder object for the sentence to use the reverse method.
 
